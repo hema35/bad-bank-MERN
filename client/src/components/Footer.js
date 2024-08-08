@@ -14,7 +14,7 @@ export default function Footer() {
             <h5>Quick Links</h5>
             <Nav className="flex-column">
               <a
-                href="https://github.com/hema35/bad-bank-fullstack-mern"
+                href="https://github.com/hema35/bad-bank-MERN"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-light"
