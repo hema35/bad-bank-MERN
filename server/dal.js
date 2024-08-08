@@ -14,8 +14,6 @@ const { ObjectId } = require("mongodb");
 async function connectToDb() {
   try {
     const client = await MongoClient.connect(url, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
     });
     db = client.db("mit-pro-banking-app");
     console.log("Connected to MongoDB");

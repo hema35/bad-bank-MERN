@@ -58,7 +58,9 @@ export const useAuth = () => {
         const message = await response.text();
         throw new Error(`Error: ${message}`);
       } else {
-        const { accessToken } = await response.json();
+        const { accessToken } = await 
+        response.json();
+        console.log('accessToken : ', accessToken)
         localStorage.setItem("token", accessToken);
         await fetchUserProfile(accessToken);
         navigate("/dashboard");
